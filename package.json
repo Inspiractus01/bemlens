@@ -1,0 +1,14 @@
+{
+  "name": "bem-scss-nav",
+  "displayName": "BEM SCSS Navigator",
+  "publisher": "inspiractus",
+  "description": "Jump to SCSS definition from BEM class names and @include mixins. Supports nested BEM syntax (&__element, &--modifier) — works where CSS Peek fails.",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.75.0" },
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/inspiractus/bem-scss-nav" },
+  "categories": ["Other"],
+  "contributes": {}
+}
