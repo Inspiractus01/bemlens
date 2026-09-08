@@ -1,18 +1,18 @@
 {
-  "name": "bem-scss-nav",
-  "displayName": "BEM SCSS Navigator",
+  "name": "bemlens",
+  "displayName": "BEMLens",
   "publisher": "inspiractus",
   "description": "Jump between BEM classes in TSX/JSX and their SCSS definitions, follow @include to @mixin, and see class usage counts inline in SCSS.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": { "vscode": "^1.75.0" },
   "activationEvents": ["onStartupFinished"],
   "main": "./extension.js",
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/Inspiractus01/bem-scss-nav" },
+  "repository": { "type": "git", "url": "https://github.com/Inspiractus01/bemlens" },
   "categories": ["Other"],
   "contributes": {
     "configuration": {
-      "title": "BEM SCSS Navigator",
+      "title": "BEMLens",
       "properties": {
         "scssUsageLens.include": {
           "type": "string",

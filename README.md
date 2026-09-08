@@ -1,4 +1,4 @@
-# BEM SCSS Navigator
+# BEMLens
 
 Tiny VS Code extension for BEM + SCSS projects.
 
@@ -20,16 +20,16 @@ Example: in your `.tsx` you have `<div className="card__title--large">`. Ctrl+cl
 
 ## Install
 
-Download the latest `.vsix` from [Releases](https://github.com/Inspiractus01/bem-scss-nav/releases), then:
+Download the latest `.vsix` from [Releases](https://github.com/Inspiractus01/bemlens/releases), then:
 
 ```bash
-code --install-extension bem-scss-nav-0.0.2.vsix
+code --install-extension bemlens.vsix
 ```
 
 Or, one line:
 
 ```bash
-curl -sL -o /tmp/bem-scss-nav.vsix https://github.com/Inspiractus01/bem-scss-nav/releases/latest/download/bem-scss-nav.vsix && code --install-extension /tmp/bem-scss-nav.vsix
+curl -sL -o /tmp/bemlens.vsix https://github.com/Inspiractus01/bemlens/releases/latest/download/bemlens.vsix && code --install-extension /tmp/bemlens.vsix
 ```
 
 ## License
