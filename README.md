@@ -2,21 +2,23 @@
 
 Tiny VS Code extension for BEM + SCSS projects.
 
-## What it does
+VS Code already lets you Ctrl+click (Cmd on Mac) a function or variable to jump to where it's defined — that's built in. But a class name like `"card__title--large"` in your JSX is just a string to VS Code, so that same click does nothing. BEMLens makes classes and mixins work the same way, so your markup, styles, and logic are all one click apart.
 
-- Ctrl+click (Cmd on Mac) a class name in your component → jumps to the SCSS file where that class is defined. Works with nested BEM syntax (`&__element`, `&--modifier`), which CSS Peek can't resolve.
-- Ctrl+click `@include something` in SCSS → jumps to `@mixin something`.
-- Above every class in SCSS, a small CodeLens shows how many times it's used in your TSX/JSX, click it to see them all.
+## Features
 
-Example: in your `.tsx` you have `<div className="card__title--large">`. Ctrl+click on `card__title--large` → opens the SCSS at the line where it's styled, even though the SCSS is written like:
+**Class name → SCSS definition.** Ctrl+click a class name in your component → jumps straight to the SCSS rule that styles it. Understands nested BEM syntax (`&__element`, `&--modifier`), which CSS Peek can't resolve.
 
 ```scss
 .card {
   &__title {
-    &--large { ... }
+    &--large { ... } // Ctrl+click "card__title--large" in your JSX lands here
   }
 }
 ```
+
+**`@include` → `@mixin` definition.** Ctrl+click a mixin name after `@include` in SCSS → jumps to where that `@mixin` is defined.
+
+**Usage count CodeLens.** Above every class in SCSS, a small "N usages in TSX/JSX" lens shows how many places use it — click it to see them all, same as the built-in "N references" you get on functions.
 
 ## Install
 
