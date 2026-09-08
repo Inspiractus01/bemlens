@@ -2,13 +2,29 @@
   "name": "bem-scss-nav",
   "displayName": "BEM SCSS Navigator",
   "publisher": "inspiractus",
-  "description": "Jump to SCSS definition from BEM class names and @include mixins. Supports nested BEM syntax (&__element, &--modifier) — works where CSS Peek fails.",
-  "version": "0.0.1",
+  "description": "Jump between BEM classes in TSX/JSX and their SCSS definitions, follow @include to @mixin, and see class usage counts inline in SCSS.",
+  "version": "0.0.2",
   "engines": { "vscode": "^1.75.0" },
   "activationEvents": ["onStartupFinished"],
   "main": "./extension.js",
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/inspiractus/bem-scss-nav" },
+  "repository": { "type": "git", "url": "https://github.com/Inspiractus01/bem-scss-nav" },
   "categories": ["Other"],
-  "contributes": {}
+  "contributes": {
+    "configuration": {
+      "title": "BEM SCSS Navigator",
+      "properties": {
+        "scssUsageLens.include": {
+          "type": "string",
+          "default": "**/*.{tsx,jsx,ts,js}",
+          "description": "Glob for files to search for class usages."
+        },
+        "scssUsageLens.exclude": {
+          "type": "string",
+          "default": "**/{node_modules,graft,.next,dist,build}/**",
+          "description": "Glob excluded from the search."
+        }
+      }
+    }
+  }
 }
